@@ -143,3 +143,14 @@ void mediayvarianza (float m1[5][5]){
  
 	
 }
+//transpuesta de una-Jeremy Lara//
+#include <iostream>
+#include<stdlib.h>
+
+using namespace std;
+
+void transpuesta (float matriz[5][5], float resultado[5][5]){
+    for(int i=0;i<5;i++)
+      for(int j=0;j<5;j++)
+          resultado[j][i]=matriz[i][j];
+}
