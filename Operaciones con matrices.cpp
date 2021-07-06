@@ -143,7 +143,7 @@ void mediayvarianza (float m1[5][5]){
  
 	
 }
-//transpuesta de una-Jeremy Lara//
+//transpuesta de una matriz- Jeremy Lara//
 #include <iostream>
 #include<stdlib.h>
 
