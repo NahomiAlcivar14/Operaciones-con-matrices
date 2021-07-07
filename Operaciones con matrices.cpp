@@ -156,22 +156,18 @@ void transpuesta (float matriz[5][5], float resultado[5][5]){
           resultado[j][i]=matriz[i][j];
 }
 //   CALCULAR LA POTENCIA DE UNA MATRIZ - ANTHONY MARTINEZ
-# incluye  < iostream >
+# include  < iostream >
+# include < stdlib.h >
+# include < cmath >
 
-# incluye < stdlib.h >
-
-# incluye < cmath >
-
-utilizando 
-espacio de nombres  std ;
+using namespace  std ;
 
 
 void  potencia ( float matriz [ 5 ] [ 5 ], int n, float resultado [ 5 ] [ 5 ])
 {
     
-para ( int i = 0 ; i < 5 ; i ++)
-        
-para ( int j = 0 ; j < 5 ; j ++)
+for ( int i = 0 ; i < 5 ; i ++)        
+for ( int j = 0 ; j < 5 ; j
         
 resultado [i] [j] = pow (matriz [i] [j], n);
 
