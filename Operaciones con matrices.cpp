@@ -1,13 +1,14 @@
 
 #include <iostream>
 #include<stdlib.h>
-#include "nahomi1.cpp"
-#include "jared2.cpp"
-#include "anthony3.cpp"
-#include "jeremy4.cpp"
-#include "jared5.cpp"
-
 using namespace std;
+#include "nahomi1.h"
+#include "jared2.h"
+#include "anthony3.h"
+#include "jeremy4.h"
+#include "jared5.h"
+
+
 
 void mostrar(float (*r)[5])
 {
@@ -77,98 +78,4 @@ int main()
 	}while(op!=0);
 
     return 0;
-}
-//NAHOMI ALCIVAR//
-#include <iostream>
-#include<stdlib.h>
-
-using namespace std;
-
-void ingresar(float matriz[5][5]){
-  for(int i=0;i<=6;i++){
-    for(int j=0;j<=6;j++){
-      matriz[i][j]=rand()%(89-2+1)+2;
-    }
-  }
-}
-//JARED BERNAL// 
-#include <iostream>
-#include<stdlib.h>
-
-using namespace std;
-void producto(float m1[5][5], float m2[5][5], float r[5][5]){
-    for(int i=0;i<5;i++){ 
-      for(int j=0;j<5;j++){
-          for(int k=0;k<5;k++){
-              r[i][j]=r[i][j]+(m1[i][k]*m2[k][j]);
-          }
-      }
-  }
-}
-
-//JARED BERNAL//
-#include <iostream>
-#include<stdlib.h>
-
-using namespace std;
-
-void mediayvarianza (float m1[5][5]){
-    int sumatoria = 0;
-    int cantidadElementos = 5*5;
-    double sum[5]; // cantidad de filas = cantidad de alumnos
-	double avg[5];
-	double variance[5];
-	double deviation[5];
-
-    for (int y = 0; y < 5; y++) {
-        for (int x = 0; x < 5; x++) {
-            int elementoActual = m1[y][x];
-            sumatoria = sumatoria + elementoActual;
-        }
-    }
-
-    double promedio = (float) sumatoria / (float) cantidadElementos;
-    cout<<"Media: "<<promedio<<endl;
-    
-    ////////////////////////////////////
-    // varianzas
-	for(int x=0; x<5; x++) {
-		variance[x] = 0;
-		for(int y=0; y<5; y++) {
-			double range = pow(m1[x][y] - avg[x], 2);
-			variance[x] += range;
-		}
-		variance[x] = variance[x] / 5;
-		cout<<endl<<"Variaciones: "<<variance[x]<<endl;
-	}
- 
-	
-}
-//transpuesta de una matriz- Jeremy Lara//
-#include <iostream>
-#include<stdlib.h>
-
-using namespace std;
-
-void transpuesta (float matriz[5][5], float resultado[5][5]){
-    for(int i=0;i<5;i++)
-      for(int j=0;j<5;j++)
-          resultado[j][i]=matriz[i][j];
-}
-//   CALCULAR LA POTENCIA DE UNA MATRIZ - ANTHONY MARTINEZ
-# include  < iostream >
-# include < stdlib.h >
-# include < cmath >
-
-using namespace  std ;
-
-
-void  potencia ( float matriz [ 5 ] [ 5 ], int n, float resultado [ 5 ] [ 5 ])
-{
-    
-for ( int i = 0 ; i < 5 ; i ++)        
-for ( int j = 0 ; j < 5 ; j
-        
-resultado [i] [j] = pow (matriz [i] [j], n);
-
 }
