@@ -1,6 +1,7 @@
 
 #include <iostream>
 #include<stdlib.h>
+#include<cmath>
 using namespace std;
 #include "nahomi1.h"
 #include "jared2.h"
